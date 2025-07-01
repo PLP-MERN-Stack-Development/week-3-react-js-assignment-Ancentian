@@ -39,7 +39,7 @@ src/
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/Ancentian/plp-task-manager.git
+git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-Ancentian.git
 cd plp-task-manager
 ```
 
@@ -65,7 +65,7 @@ npm run build
 
 ## 🌐 Live Demo
 
-Deployed URL: [https://]
+Deployed URL: [https://week3-plp-task-manager.vercel.app/]
 
 ---
 
@@ -82,7 +82,8 @@ Deployed URL: [https://]
 
 ## 📸 Screenshots
 
-_Screenshots showcasing the task manager, dark mode, and API tasks view.
+Screenshots showcasing the task manager, dark mode, and API tasks view.
+![alt text](image.png)
 
 ---
 
