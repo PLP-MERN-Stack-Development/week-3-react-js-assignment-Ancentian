@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  /* Light theme */
+  --color-background: 243 244 246; /* gray-100 equivalent */
+  --color-surface: 255 255 255; /* white */
+  --color-text-primary: 17 24 39; /* gray-900 */
+  --color-text-secondary: 107 114 128; /* gray-500 */
+  --color-border: 229 231 235; /* gray-200 */
+}
+
+.dark {
+  /* Dark theme */
+  --color-background: 17 24 39; /* gray-900 equivalent */
+  --color-surface: 31 41 55; /* gray-800 */
+  --color-text-primary: 243 244 246; /* gray-100 */
+  --color-text-secondary: 156 163 175; /* gray-400 */
+  --color-border: 75 85 99; /* gray-600 */
+}
+
+@theme {
+  --color-background: rgb(var(--color-background));
+  --color-surface: rgb(var(--color-surface));
+  --color-text-primary: rgb(var(--color-text-primary));
+  --color-text-secondary: rgb(var(--color-text-secondary));
+  --color-border: rgb(var(--color-border));
+}

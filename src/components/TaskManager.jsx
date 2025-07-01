@@ -57,11 +57,15 @@ const TaskManager = () => {
   const [filter, setFilter] = useState('all');
 
   // Filter tasks based on selected filter
-  const filteredTasks = tasks.filter((task) => {
-    if (filter === 'active') return !task.completed;
-    if (filter === 'completed') return task.completed;
-    return true; // 'all' filter
-  });
+  // Sort tasks by createdAt (latest first), then filter
+  const filteredTasks = [...tasks]
+    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+    .filter((task) => {
+      if (filter === 'active') return !task.completed;
+      if (filter === 'completed') return task.completed;
+      return true; // 'all' filter
+    });
+
 
   // Handle form submission
   const handleSubmit = (e) => {
